@@ -1,0 +1,7 @@
+.idea
+config.php
+admin/config.php
+.htaccess
+system/logs
+system/cache/cache.*
+system/download

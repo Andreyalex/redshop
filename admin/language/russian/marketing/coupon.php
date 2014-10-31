@@ -1,0 +1,44 @@
+<?php 
+
+
+$_['heading_title'] = 'Купон';
+$_['text_success'] = 'Изменения прошли успешно';
+$_['text_percent'] = 'Процент';
+$_['text_amount'] = 'Фиксированная величина';
+$_['column_name'] = 'Название купона';
+$_['column_code'] = 'Код:<br /><span class="help">Например: ru. Не изменять, если язык установлен по умолчанию.</span>';
+$_['column_discount'] = 'Скидка';
+$_['column_date_start'] = 'Дата начала:';
+$_['column_date_end'] = 'Дата окончания:';
+$_['column_status'] = 'Статус';
+$_['column_order_id'] = 'Order ID';
+$_['column_customer'] = 'Customer';
+$_['column_amount'] = 'Количество';
+$_['column_date_added'] = 'Date Added';
+$_['column_action'] = 'Действие';
+$_['entry_name'] = 'Название купона';
+$_['entry_code'] = 'Код:<br /><span class="help">Например: ru. Не изменять, если язык установлен по умолчанию.</span>';
+$_['entry_type'] = 'Тип:';
+$_['entry_discount'] = 'Скидка';
+$_['entry_logged'] = 'Логин клиента';
+$_['entry_shipping'] = 'Бесплатная доставка';
+$_['entry_total'] = 'Общее количество';
+$_['entry_category'] = 'Категории';
+$_['entry_product'] = 'Продукты';
+$_['entry_date_start'] = 'Дата начала:';
+$_['entry_date_end'] = 'Дата окончания:';
+$_['entry_uses_total'] = 'Использований на купон';
+$_['entry_uses_customer'] = 'Использований на клиента';
+$_['entry_status'] = 'Статус';
+$_['help_code'] = 'Код для ввода клиентом для получения скидки';
+$_['help_type'] = 'Процент или фиксированное значение';
+$_['help_logged'] = 'Клиент должен войти чтобы использовать купон';
+$_['help_total'] = 'Общая сумма должна быть достигнута для валидности купона';
+$_['help_category'] = 'Выбрать все товары в выбранной категории';
+$_['help_product'] = 'Выбрать конкретные продукты к которым будет применен купон. Если не выбрать, то купон будет применен ко всей корзине';
+$_['help_uses_total'] = 'Количество раз которое купон может быть использован любым клиентом. Оставьте пустым для безлима.';
+$_['help_uses_customer'] = 'Количество раз которое купон может быть использован одним клиентом.. Оставьте пустым для безлима.';
+$_['error_permission'] = 'Warning: You do not have permission to modify coupons!';
+$_['error_exists'] = 'Warning: Coupon code is already in use!';
+$_['error_name'] = 'Coupon Name must be between 3 and 128 characters!';
+$_['error_code'] = 'Code must be between 3 and 10 characters!';
