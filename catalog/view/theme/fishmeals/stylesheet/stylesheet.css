@@ -1,8 +1,8 @@
 /*
-#f28105 - main orange color (prev #229ac8)
+#f20005 - main orange color (prev #229ac8)
 
-#ff8805 - gradient light (prev #23a1d1)
-#de7605 - gradient dark (prev #1f90bb)
+#f20005 - gradient light (prev #23a1d1)
+#cc0000 - gradient dark (prev #1f90bb)
 
 #b76104 - darkest border (prev #145e7a)
 */
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #222;
 }
 a {
-	color: #f28105;
+	color: #f20005;
 }
 /* default font size */
 .fa {
@@ -42,9 +42,6 @@ h5 {
 }
 h6 {
 	font-size: 10.2px;
-}
-a {
-	color: #f28105;
 }
 a:hover {
 	text-decoration: none;
@@ -84,8 +81,8 @@ div.required .control-label:before {
 .dropdown-menu li > a:hover {
 	text-decoration: none;
 	color: #ffffff;
-	background-color: #f28105;
-	background-image: linear-gradient(to bottom, #ff8805, #de7605);
+	background-color: #f20005;
+	background-image: linear-gradient(to bottom, #f20005, #cc0000);
 	background-repeat: repeat-x;
 }
 /* top */
@@ -174,10 +171,10 @@ div.required .control-label:before {
 }
 /* menu */
 #menu {
-	background-color: #f28105;
-	background-image: linear-gradient(to bottom, #ff8805, #de7605);
+	background-color: #f20005;
+	background-image: linear-gradient(to bottom, #f20005, #cc0000);
 	background-repeat: repeat-x;
-	border-color: #de7605 #de7605 #b76104;
+	border-color: #cc0000 #cc0000 #b76104;
 	min-height: 40px;
 }
 #menu .nav > li > a {
@@ -228,8 +225,8 @@ div.required .control-label:before {
 #menu .see-all:hover, #menu .see-all:focus {
 	text-decoration: none;
 	color: #ffffff;
-	background-color: #f28105;
-	background-image: linear-gradient(to bottom, #ff8805, #de7605);
+	background-color: #f20005;
+	background-image: linear-gradient(to bottom, #f20005, #cc0000);
 	background-repeat: repeat-x;
 }
 #menu #category {
@@ -247,14 +244,14 @@ div.required .control-label:before {
 	color: #FFF;
 	padding: 2px 18px;
 	float: right;
-	background-color: #f28105;
-	background-image: linear-gradient(to bottom, #ff8805, #de7605);
+	background-color: #f20005;
+	background-image: linear-gradient(to bottom, #f20005, #cc0000);
 	background-repeat: repeat-x;
-	border-color: #de7605 #de7605 #b76104;
+	border-color: #cc0000 #cc0000 #b76104;
 }
 #menu .btn-navbar:hover, #menu .btn-navbar:focus, #menu .btn-navbar:active, #menu .btn-navbar.disabled, #menu .btn-navbar[disabled] {
 	color: #ffffff;
-	background-color: #f28105;
+	background-color: #f20005;
 }
 #menu .navbar-collapse {
 	overflow: visible !important;
@@ -383,13 +380,13 @@ footer h5 {
 .btn-primary {
 	color: #ffffff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	background-color: #f28105;
-	background-image: linear-gradient(to bottom, #ff8805, #de7605);
+	background-color: #f20005;
+	background-image: linear-gradient(to bottom, #f20005, #cc0000);
 	background-repeat: repeat-x;
-	border-color: #de7605 #de7605 #b76104;
+	border-color: #cc0000 #cc0000 #b76104;
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-	background-color: #de7605;
+	background-color: #cc0000;
 	background-position: 0 -15px;
 }
 .btn-warning {
@@ -440,7 +437,7 @@ footer h5 {
 .btn-link {
 	border-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
-	color: #f28105;
+	color: #f20005;
 	border-radius: 0;
 }
 .btn-link, .btn-link:active, .btn-link[disabled] {
@@ -571,7 +568,7 @@ h2.price {
 	margin: 0;
 }
 .product-thumb .price {
-    color: #de7605;
+    color: #ff0000;
     font-size: 20px;
     text-align: right;
     padding: 10px;
