@@ -240,6 +240,7 @@ class ControllerProductProduct extends Controller {
 			
 			$data['text_select'] = $this->language->get('text_select');
 			$data['text_manufacturer'] = $this->language->get('text_manufacturer');
+            $data['text_product_sku'] = $this->language->get('text_product_sku');
 			$data['text_model'] = $this->language->get('text_model');
 			$data['text_reward'] = $this->language->get('text_reward');
 			$data['text_points'] = $this->language->get('text_points');	
@@ -275,8 +276,9 @@ class ControllerProductProduct extends Controller {
             $data['tab_receipt'] = $this->language->get('tab_receipt');
 			$data['tab_attribute'] = $this->language->get('tab_attribute');
 			$data['tab_review'] = sprintf($this->language->get('tab_review'), $product_info['reviews']);
-			
+
 			$data['product_id'] = (int)$this->request->get['product_id'];
+            $data['product_sku'] = $product_info['sku'];
 			$data['manufacturer'] = $product_info['manufacturer'];
 			$data['manufacturers'] = $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']);
 			$data['model'] = $product_info['model'];
@@ -402,7 +404,6 @@ class ControllerProductProduct extends Controller {
 			$data['reviews'] = sprintf($this->language->get('text_reviews'), (int)$product_info['reviews']);
 			$data['rating'] = (int)$product_info['rating'];
 			$data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
-			$data['receipt'] = html_entity_decode($product_info['receipt'], ENT_QUOTES, 'UTF-8');
 			$data['attribute_groups'] = $this->model_catalog_product->getProductAttributes($this->request->get['product_id']);
 			
 			$data['products'] = array();
@@ -445,7 +446,6 @@ class ControllerProductProduct extends Controller {
 					'thumb'   	  => $image,
 					'name'    	  => $result['name'],
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
-					'receipt'     => utf8_substr(strip_tags(html_entity_decode($result['receipt'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
 					'price'   	  => $price,
 					'special' 	  => $special,
 					'tax'         => $tax,

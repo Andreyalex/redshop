@@ -37,9 +37,6 @@
           <?php } ?>
           <ul class="nav nav-tabs">
             <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
-            <?php if (!empty($receipt)) { ?>
-            <li><a href="#tab-receipt" data-toggle="tab">Советы и рецепты</a></li>
-            <?php } ?>
             <?php if ($attribute_groups) { ?>
             <li><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
             <?php } ?>
@@ -49,9 +46,6 @@
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-            <?php if (!empty($receipt)) { ?>
-              <div class="tab-pane" id="tab-receipt"><?php echo $receipt; ?></div>
-            <?php } ?>
             <?php if ($attribute_groups) { ?>
             <div class="tab-pane" id="tab-specification">
               <table class="table table-bordered">
@@ -134,6 +128,9 @@
               <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="addToWishList('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
           </div>
           <ul class="list-unstyled">
+            <?php if ($product_sku) { ?>
+            <li><?php echo $text_product_sku; ?> <?php echo $product_sku; ?></li>
+            <?php } ?>
             <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>

@@ -3,6 +3,7 @@
 $_['text_search']       = 'Поиск';
 $_['text_brand']        = 'Бренд';
 $_['text_manufacturer'] = 'Производитель:';
+$_['text_product_sku']          = 'Артикул:';
 $_['text_model']        = 'Модель:';
 $_['text_reward']       = 'Бонусные баллы:'; 
 $_['text_points']       = 'Цена в бонусных баллах:';
