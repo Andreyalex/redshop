@@ -1,9 +1,5 @@
-<div class="sidebar">
-    <ul class="nav nav-tabs nav-stacked">
-        <?php foreach ($informations as $information) { ?>
-            <li>
-                <a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a>
-            </li>
-        <?php } ?>
-    </ul>
+<div class="list-group">
+    <?php foreach ($informations as $information) { ?>
+    <a href="<?php echo $information['href']; ?>" class="list-group-item"><?php echo $information['title']; ?></a>
+    <?php } ?>
 </div>
