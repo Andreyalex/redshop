@@ -118,9 +118,6 @@ div.required .control-label:before {
 	margin: 0 0 10px 0;
 }
 /* search */
-#search {
-	margin-bottom: 10px;
-}
 #search .input-lg {
 	min-height: 40px;
     height: 40px;
@@ -180,7 +177,7 @@ div.required .control-label:before {
 #menu .nav > li > a {
 	color: #fff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	padding: 10px 15px 10px 15px;
+	padding: 14px;
 	min-height: 15px;
 	background-color: transparent;
 }
@@ -841,4 +838,19 @@ h2.price {
 .form-controls-inline .form-control {
     float: left;
     width: 300px;
+}
+
+.input-group-btn {
+    width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-sm {
+    font-size: 12px;
 }
