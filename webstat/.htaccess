@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/kepki.biz.ua/webstat"
+AuthUserFile /var/www/monah/data/etc/83755922.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
