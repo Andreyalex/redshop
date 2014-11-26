@@ -77,7 +77,7 @@ class ControllerCommonHeader extends Controller {
 		$data['categories'] = array();
 					
 		$categories = $this->model_catalog_category->getCategories(0);
-		
+
 		foreach ($categories as $category) {
 			if ($category['top']) {
 				// Level 2
@@ -106,8 +106,19 @@ class ControllerCommonHeader extends Controller {
 				);
 			}
 		}
-		
-		$data['language'] = $this->load->controller('module/language');
+
+        $this->load->model('catalog/information');
+
+        $data['articles'] = array();
+
+        foreach ($this->model_catalog_information->getInformations() as $result) {
+            $data['articles'][] = array(
+                'name' => $result['title'],
+                'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+            );
+        }
+
+        $data['language'] = $this->load->controller('module/language');
 		$data['currency'] = $this->load->controller('module/currency');
 		$data['search'] = $this->load->controller('module/search');
 		$data['cart'] = $this->load->controller('module/cart');

@@ -854,3 +854,26 @@ h2.price {
 .btn-sm {
     font-size: 12px;
 }
+
+.module-category {
+    background-color: #f20005;
+    background-image: linear-gradient(to bottom, #f20005, #cc0000);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+}
+
+.module-category .list-group-item {
+    background: none;
+    color: #fff;
+    border-color: #cc0000 #cc0000 #b76104;
+}
+
+.module-category .list-group-item:hover,
+.module-category .list-group-item.active,
+.module-category .list-group-item.active:hover {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 0 1000px rgba(0, 0, 0, 0.1);
+    border-color: #cc0000;
+    text-shadow: none;
+}
