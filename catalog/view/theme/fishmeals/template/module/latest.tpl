@@ -2,14 +2,32 @@
     <h3><?php echo $heading_title; ?></h3>
     <div class="row product-layout">
       <?php foreach ($products as $product) { ?>
-      <div class="product-item col-lg-12 col-md-3 col-sm-6 col-xs-12">
-          <a class="image" href="<?php echo $product['href']; ?>"><img class="image-tail image-tail-small" src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
-          <h4 class="title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-          <span class="text-description"><?php echo ($product['description'] != '..')? $product['description'] : ''; ?></span>
-    <!--      <div class="button-group">-->
-    <!--        <button type="button" onclick="addToCart('--><?php //echo $product['product_id']; ?><!--');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">--><?php //echo $button_cart; ?><!--</span></button>-->
-    <!--      </div>-->
+
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="product-thumb transition">
+      <div class="image" style="height:167px;width:167px"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+      <div class="caption" style="min-height:0">
+        <h4 style="margin:0"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+        <?php if ($product['price']) { ?>
+        <p class="price" style="margin:0;padding:10px 0 0">
+          <?php if (!$product['special']) { ?>
+          <?php echo $product['price']; ?>
+          <?php } else { ?>
+          <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+          <?php } ?>
+          <?php if ($product['tax']) { ?>
+          <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+          <?php } ?>
+        </p>
+        <?php } ?>
       </div>
+      <div class="button-group">
+        <button type="button" onclick="addToCart('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
+        <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="addToWishList('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
+      </div>
+    </div>
+  </div>
+
       <?php } ?>
     </div>
 </div>

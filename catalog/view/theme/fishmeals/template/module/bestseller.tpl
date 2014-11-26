@@ -3,10 +3,9 @@
   <?php foreach ($products as $product) { ?>
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
     <div class="product-thumb transition">
-      <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
-      <div class="caption">
-        <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-        <p><?php echo $product['description']; ?></p>
+      <div class="image" style="height:167px;width:167px"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+      <div class="caption" style="min-height:0">
+        <h4 style="margin:0"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
         <?php if ($product['rating']) { ?>
         <div class="rating">
           <?php for ($i = 1; $i <= 5; $i++) { ?>
@@ -19,7 +18,7 @@
         </div>
         <?php } ?>
         <?php if ($product['price']) { ?>
-        <p class="price">
+        <p class="price" style="margin:0;padding:10px 0 0">
           <?php if (!$product['special']) { ?>
           <?php echo $product['price']; ?>
           <?php } else { ?>
