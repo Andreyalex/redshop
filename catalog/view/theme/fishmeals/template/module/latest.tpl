@@ -3,9 +3,9 @@
     <div class="row product-layout">
       <?php foreach ($products as $product) { ?>
 
-  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
     <div class="product-thumb transition">
-      <div class="image" style="height:167px;width:167px"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+      <div class="image" style="height:167px"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
       <div class="caption" style="min-height:0">
         <h4 style="margin:0"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
         <?php if ($product['price']) { ?>

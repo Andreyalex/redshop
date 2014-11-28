@@ -504,6 +504,7 @@ footer h5 {
 }
 .product-grid .product-thumb .image {
 	float: none;
+    height: 167px;
 }
 @media (min-width: 767px) {
 .product-list .product-thumb .image {
@@ -778,7 +779,6 @@ h2.price {
 }
 
 .module-latest .image {
-    float: left;
     margin-right: 10px;
     margin-bottom: 10px;
 }
